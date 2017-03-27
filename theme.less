@@ -1,0 +1,182 @@
+/* Variables used in multiple places */
+@background: #253137;
+@foreground: #f0f1f5;
+
+@darker:   rgba(10,10,10,0.35);
+@backgrnd:  #3D3F41;
+
+
+@darker:   rgba(10,10,10,0.35);
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;border-left:1px solid rgba(48, 62, 69, 0.42);
+    color: @foreground;
+    color: rgb(183, 217, 234);
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: @background;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(52, 61, 70, 1);
+        color: #767676;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #767676;
+    }
+}
+
+.cm-number {color: #a48ed0;}
+.cm-variable-2{color: #ef839a;}
+.cm-tag {color: #667f89};
+.cm-tag {color: #c6b813};
+.cm-atom {color: #d4d4d4;}
+.cm-def {color: @foreground;}
+.cm-comment {color: #6f6f6f;}
+.cm-error, .cm-minus {background: rgba(48, 186, 198, 0.2); color: #f78384;}
+.cm-header {color: #d85896;}
+.cm-link {color: #b77fdb; text-decoration: none;}
+.cm-rangeinfo {color: #6c71c4;}
+.cm-builtin, .cm-quote {color: #e8c884;}
+.cm-qualifier {color: #fab938;}
+.cm-keyword {color: #f8f19f;}
+.cm-property {color: #50af9f;}
+.cm-variable-3 {color: #f66481;}
+.cm-attribute {color:#de3b61;}
+.cm-attribute {color:#c4697e;}
+.cm-string {color:#00aca5;}
+.cm-hr {color:purple;}
+.cm-string-2{color:#4695b2;}
+.cm-variable {color:#d4d4d4;}
+.cm-variable-2 {color:#dd7777;}
+.cm-variable-4 {color:#b277dd;}
+.cm-operator {color:#f56ce0;}
+.cm-meta {color:#4e7b98;}
+//.cm-string{color:#e33b75;}
+/* Extra CSS */
+
+.CodeMirror-searching {
+    background-color: #d3cd69;
+    &.searching-current-match {
+        background-color: #ac26c4;
+    }
+}
+
+
+.CodeMirror-cursor {
+    border-left: 1px solid #c5c8c6 !important;
+    border-left: 3px solid #0ae352 !important;
+    border-left: 3px solid #cb6574 !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: #475d65;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #333f48;
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: #47535e;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #fff;
+}
+
+/* Non-editor styling */
+
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}
+
+.dark #status-indicators{
+    background:#243138; 
+}
+
+#working-set-list-container {
+background: #243138;
+}
+
+#project-files-header .btn-alt-quiet {
+background-color: #243138;
+}
+
+.working-set-header, .panel, #main-toolbar, .dark #status-bar {
+background: #243138;
+} 
+
+.working-set-header>span {
+background: #243138;
+}
+.jstree-brackets li.jstree-closed>a, .jstree-brackets li.jstree-open>a {
+color: #B0BFC6;
+}
+    
+.sidebar-selection, .filetree-selection, .sidebar-selection-extension, .filetree-selection-extension {
+background: none;
+border:none;
+}
+
+.dark .modal-bar {
+color: #243138;
+background: #243138;
+}
+
+.CodeMirror-linebackground,
+.CodeMirror-activeline {
+    background-color:transparent;
+    outline: none;
+//    box-shadow: inset 0 0 25px rgba(0,0,0,0.3);
+}
+
+.CodeMirror-foldgutter-open:after {
+    font-size: 11pt;
+    color: #666;
+    content: "\25BE";
+    text-shadow: 0 2px 1px rgba(0,0,0,0.25);
+}
+.CodeMirror-foldgutter-folded:after {
+    font-size: 11pt;
+    color: #888;
+    content: "\25B8";
+    text-shadow: 0 2px 1px rgba(0,0,0,0.25);
+}
+
+
+.CodeMirror-matchingbracket {
+    /* Ensure visibility against gray inline editor background */
+    background-color: rgba(239, 239, 239, 0.17);
+    background-color: rgba(239, 239, 239, 0);
+//    border-top:1px solid rgba(0, 206, 255, 0.77);
+    border-bottom:1px solid rgba(0, 206, 255, 0.77);
+    color: #39dae0 !important;
+}
+
+ .CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    background-color: rgba(239, 239, 239, 0.17);
+    background-color: rgba(239, 239, 239, 0);
+//    border-top:1px solid rgba(0, 206, 255, 0.77);
+    border-bottom:1px solid rgba(0, 206, 255, 0.77);
+//    color: red !important;
+}
